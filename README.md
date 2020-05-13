@@ -9,3 +9,11 @@ This code also selects between one of three camera inputs to show. In my case, t
 back of our camp trailer, or a forward looking camera in the grill.
 
 Intended for the Arduino platform, first installed version on the UNO.
+
+## Hardware design for the UNO Shield
+
+I used [ExpressPCB Windows software](https://www.expresspcb.com/) to do the shield layout, and then had Express PCB make
+sample boards. You can use this to print and make your own, or do as I did and upload the file and have beautiful boards
+mailed to you.
+
+![Express PCB board layout](/ExpressPCB/ExpressPCB-Taco.png)
