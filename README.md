@@ -17,3 +17,29 @@ sample boards. You can use this to print and make your own, or do as I did and u
 mailed to you.
 
 ![Express PCB board layout](/ExpressPCB/ExpressPCB-Taco.png)
+
+## Nearly completed shield
+
+![Populated Shield](/ExpressPCB/Shield.jpeg)
+
+## Parts List
+
+The board provides for 5 relays, 3 to select the camera input, one to trigger the reverse input to the head unit, and the last
+to switch day/night display mode.
+
+There's a 5volt regulator on board to power the relays, which are switched from Arduino digital pins through transitors.
+
+Camera input selection
+* 5ea [Relay](https://www.sparkfun.com/products/100)
+* 5ea [2N3904 transistor](https://www.sparkfun.com/products/521)
+* 5ea [1N4004 diode](https://www.sparkfun.com/products/14884)
+* 5ea 1K 1/4 watt [resistor](https://www.sparkfun.com/products/10969)
+
+Voltage dividers for switch/dial inputs (Rev & PWM)
+* 2ea 4.7K 1/4 watt resistor
+* 2ea 10k 1/4 watt resistor
+
+Resistors to prevent input float
+* 5ea 10k 1/4 watt resistor (On, Sel, Vin signals - some were soldered on the underside of the board and are not visible above)
+
+7805 voltage regulator and capacitors
