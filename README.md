@@ -7,3 +7,5 @@ headlights in the daytime. What?! This code looks at the dash PWM brightness sig
 
 This code also selects between one of three camera inputs to show. In my case, that's the stock backup camera, a camera on the
 back of our camp trailer, or a forward looking camera in the grill.
+
+Intended for the Arduino platform, first installed version on the UNO.
