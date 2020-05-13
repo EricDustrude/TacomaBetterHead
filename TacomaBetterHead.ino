@@ -65,18 +65,16 @@ CameraOption mapDialToCameraOption(int dial) {
   return static_cast<CameraOption>(dial);
 }
 
-/*
 bool hasCameraSignal(int cameraPin) {
   return (MIN_CAMERA_SIGNAL_LEVEL <= analogRead(cameraPin));
 }
 
-CameraOption getAvailableCamera(CameraOption cameraOption) {
+CameraOption getAvailableBackupCamera() {
 
-    return hasCameraSignal(CAMERA_SIGNAL_FRONT)
-      ? cameraOption
+    return hasCameraSignal(CAMERA_SIGNAL_TRAILER)
+      ? Trailer
       : TailGate;
 }
-*/
 
 void selectCamera(CameraOption cameraOption, CameraOnOff cameraOnOff) {
   
@@ -225,6 +223,12 @@ void loop() {
     // next loop iteration...
     if (!reverseEngaged) {
       cameraOnOff = userCameraOnOffSelected ? On : Off;
+    }
+    else {
+      // Reverse is being selected with shifter. So, let's
+      // find the most appropriate camera to display.
+
+      cameraOption = getAvailableBackupCamera();
     }
   }
   else if (userCameraOnButton.getStateChanged()) {
