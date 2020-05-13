@@ -1,4 +1,4 @@
-# TacomeBetterHead
+# TacomaBetterHead
 For my 2014 Toyota Tacoma head unit so that brightness is tied to the dash brightness as well as supporting multiple camera inputs.
 
 The stock entertainment head unit has switchable screen brightness settings, one for day and the other for night. BUT, the
